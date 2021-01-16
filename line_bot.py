@@ -13,9 +13,8 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 import pya3rt
-from flask_ngrok import run_with_ngrok
+
 app = Flask(__name__)
-run_with_ngrok(app)
 
 linebot_api = LineBotApi('2GLAiQyYLall23wKhFiOJqx2VnA/qZdMidVO7+5+IXTDh1V7fOFYYOjDo5v7bXWLJmq6Av97Zm2DILSuSt+wZ5Ca1vAZVGZoZr7gJUXrMRXw7p9tGU/HayCpdMGVSLyidvRIQdU4D2MKWR4aU7MaYwdB04t89/1O/w1cDnyilFU=')
 handler = WebhookHandler('aefa06e2126145f7a4448ec5bc31bf2a')
